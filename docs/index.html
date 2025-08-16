@@ -11,7 +11,6 @@
         <!-- Navigation Section -->
         <section class="nav">
             <div class="logo-container">
-                <img src="adham-logo.webp" class="logo">
             </div>
         </section>
         <!-- Hero Section -->
@@ -210,5 +209,22 @@
                 });
             });
          </script>
+        <script>
+            document.addEventListener('visibilitychange', function() {
+                const videos = document.querySelectorAll('video');
+                
+                if (document.hidden) {
+                    videos.forEach(video => {
+                        video.dataset.wasPlaying = !video.paused;
+                    });
+                } else {
+                    videos.forEach(video => {
+                        if (video.dataset.wasPlaying === 'true') {
+                            video.play().catch(e => console.log('Video play failed:', e));
+                        }
+                    });
+                }
+            });
+        </script>
     </body>
 </html>
