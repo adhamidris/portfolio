@@ -86,7 +86,7 @@ body {
 }
 
 .header-bottom {
-    background-image: url(hero-devices.webp);
+    content: url(hero-devices.webp);
     max-width: 860px;
     max-height: 260px;
     width: 100%;
