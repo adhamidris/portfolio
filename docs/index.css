@@ -34,7 +34,6 @@ body {
 .logo {
     height: 180px;
     width: 180px;
-    content: url(adham-logo.png);
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
     animation: glow-breathe 3s ease-in-out infinite;
 }
@@ -87,7 +86,6 @@ body {
 }
 
 .header-bottom {
-    content: url(hero-devices.svg);
     max-width: 860px;
     max-height: 260px;
     width: 100%;
@@ -391,14 +389,12 @@ body {
 }
 
 .project-logo-1 {
-    content: url(novello.png);
     height: 120px;
     width: 120px;
     align-self: center;
 }
 
 .project-logo-2 {
-    content: url(hunterslogo.png);
     height: 120px;
     width: 120px;
     align-self: center;
